@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 
 import styles from './Edit.module.css';
-
+  var apiUrl = "https://fc0e-2400-adc1-41d-3c00-806a-fc5-394b-605a.ngrok-free.app/";
 function Edit() {
   const { id } = useParams();
   const [title, setTitle] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:4000/posts/${id}`)
+    fetch(apiUrl+`posts/${id}`)
       .then(res => res.json())
       .then(data => setTitle(data.title))
       .catch(console.error);
@@ -18,7 +18,7 @@ function Edit() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch(`http://localhost:4000/posts/${id}`, {
+    fetch(apiUrl+`posts/${id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ title }),

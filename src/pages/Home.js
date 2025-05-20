@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
 
 function Home() {
+  var apiUrl = "https://fc0e-2400-adc1-41d-3c00-806a-fc5-394b-605a.ngrok-free.app/";
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:4000/posts')
+    fetch(apiUrl+'posts')
       .then(res => res.json())
       .then(data => setPosts(data))
       .catch(console.error);
@@ -16,7 +17,7 @@ function Home() {
   const deletePost = (id) => {
     if (!window.confirm('Are you sure you want to delete this post?')) return;
 
-    fetch(`http://localhost:4000/posts/${id}`, { method: 'DELETE' })
+    fetch(apiUrl+`posts/${id}`, { method: 'DELETE' })
       .then(() => setPosts(posts.filter(post => post.id !== id)))
       .catch(console.error);
   };
