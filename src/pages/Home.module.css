@@ -1,0 +1,86 @@
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  color: #3f51b5;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.createButton {
+  background-color: #3f51b5;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.createButton:hover {
+  background-color: #2c387e;
+}
+
+.postList {
+  list-style: none;
+  padding: 0;
+}
+
+.postItem {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.postItem:hover {
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+}
+
+.postTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  max-width: 70%;
+}
+
+.actionButtons button,
+.actionButtons a {
+  margin-left: 0.8rem;
+  font-weight: 600;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #3f51b5;
+  text-decoration: none;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.actionButtons button:hover,
+.actionButtons a:hover {
+  background-color: #e0e0e0;
+}
+
+.noPosts {
+  color: #777;
+  font-style: italic;
+}
