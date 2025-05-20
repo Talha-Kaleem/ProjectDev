@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Talha-Kaleem/ProjectDev/static/css/main.114cb7dd.css",
+    "main.js": "/Talha-Kaleem/ProjectDev/static/js/main.cbabfc4e.js",
+    "index.html": "/Talha-Kaleem/ProjectDev/index.html",
+    "main.114cb7dd.css.map": "/Talha-Kaleem/ProjectDev/static/css/main.114cb7dd.css.map",
+    "main.cbabfc4e.js.map": "/Talha-Kaleem/ProjectDev/static/js/main.cbabfc4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.114cb7dd.css",
+    "static/js/main.cbabfc4e.js"
+  ]
+}
