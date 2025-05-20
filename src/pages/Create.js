@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 
 import styles from './Create.module.css';
+import config from '../config';
 
 function Create() {
   const [title, setTitle] = useState('');
   const navigate = useNavigate();
-    var apiUrl = "https://fc0e-2400-adc1-41d-3c00-806a-fc5-394b-605a.ngrok-free.app/";
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch(apiUrl+'posts', {
+    fetch(config+'posts', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ title }),
