@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 
 import styles from './Create.module.css';
-import config from '../config';
+// import config from '../config';
 
 function Create() {
   const [title, setTitle] = useState('');
@@ -11,7 +11,7 @@ function Create() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch(config+'posts', {
+    fetch('http://localhost:4000/posts', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ title }),

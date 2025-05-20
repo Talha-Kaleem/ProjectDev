@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Talha-Kaleem/ProjectDev/static/css/main.712c021c.css",
-    "main.js": "/Talha-Kaleem/ProjectDev/static/js/main.84bb642d.js",
-    "index.html": "/Talha-Kaleem/ProjectDev/index.html",
-    "main.712c021c.css.map": "/Talha-Kaleem/ProjectDev/static/css/main.712c021c.css.map",
-    "main.84bb642d.js.map": "/Talha-Kaleem/ProjectDev/static/js/main.84bb642d.js.map"
+    "main.css": "/ProjectDev/static/css/main.712c021c.css",
+    "main.js": "/ProjectDev/static/js/main.634f5396.js",
+    "index.html": "/ProjectDev/index.html",
+    "main.712c021c.css.map": "/ProjectDev/static/css/main.712c021c.css.map",
+    "main.634f5396.js.map": "/ProjectDev/static/js/main.634f5396.js.map"
   },
   "entrypoints": [
     "static/css/main.712c021c.css",
-    "static/js/main.84bb642d.js"
+    "static/js/main.634f5396.js"
   ]
 }

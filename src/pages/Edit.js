@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 
 import styles from './Edit.module.css';
-import config from '../config';
+// import config from '../config';
 
 function Edit() {
   const { id } = useParams();
@@ -10,7 +10,7 @@ function Edit() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(config+`posts/${id}`)
+    fetch(`http://localhost:4000/posts/${id}`)
       .then(res => res.json())
       .then(data => setTitle(data.title))
       .catch(console.error);
@@ -19,7 +19,7 @@ function Edit() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch(config+`posts/${id}`, {
+    fetch(`http://localhost:4000/posts/${id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ title }),
