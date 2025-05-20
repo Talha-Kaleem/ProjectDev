@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: 18
  
+      - name: Remove node_modules if exists
+        run: rm -rf node_modules
+
       - name: Install dependencies
         run: npm install
  
