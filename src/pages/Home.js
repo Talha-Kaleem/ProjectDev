@@ -37,7 +37,7 @@
               <span className={styles.postTitle}>{post.title}</span>
               <div className={styles.actionButtons}>
                 <Link to={`/edit/${post.id}`}>Edit</Link>
-                <button onClick={() => deletePost(post.id)}>Delevbvvbvbbte</button>
+                <button onClick={() => deletePost(post.id)}>Delete</button>
               </div>
             </li>
           ))}
